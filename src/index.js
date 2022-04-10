@@ -40,7 +40,6 @@
 // 		React.createElement("h1", {}, "HelloWorld")
 // 	);
 // };
-import { Dropdown } from "bootstrap";
 import React from "react";
 
 import ReactDOM from "react-dom";
@@ -52,7 +51,7 @@ function Booklist() {
 		<React.Fragment className="audibleClone">
 			<header className="pageHeader">
 				<Logo />
-				<Dropdown />
+				<Browse />
 				<UserInteract />
 			</header>
 			<section className="bookList">
@@ -69,6 +68,38 @@ function Booklist() {
 		</React.Fragment>
 	);
 }
+
+const Logo = () => (
+	<img
+		className="logoImg"
+		src="https://www.rsvp.co.uk/wp-content/uploads/2021/12/Audible-New-DB.png"
+		alt=""
+	/>
+);
+
+const Browse = () => {
+	return (
+		<div className="navBar">
+			<a href="#">Browse</a>
+		</div>
+	);
+};
+
+const UserInteract = () => {
+	return (
+		<div className="interactContainer">
+			<div className="searchBar">
+				<input
+					type="search"
+					name=""
+					id="globalSearch"
+					placeholder="Search our collection..."
+				/>
+				<input type="submit" id="searchInput" value="Search" />
+			</div>
+		</div>
+	);
+};
 
 const Book = () => {
 	return (

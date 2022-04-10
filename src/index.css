@@ -15,12 +15,60 @@ img {
 	border-radius: 2rem;
 }
 
+.logoImg {
+	height: 77px;
+}
+.pageHeader {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	padding: 2rem 2rem;
+	background: rgba(0, 0, 0, 0.86);
+	border-bottom-left-radius: 2rem;
+	border-bottom-right-radius: 2rem;
+}
+
+.navBar a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.interactContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+.interactContainer a {
+	color: #fff;
+	text-decoration: none;
+}
+
+#globalSearch {
+	border-radius: 25px 0 0 25px;
+	width: 369px;
+	padding: 10px 15px;
+	border: none;
+	outline: none;
+}
+
+#searchInput {
+	border-radius: 0 25px 25px 0;
+	border: none;
+	outline: none;
+	background: #ff8811;
+	color: #fff;
+	font-weight: 400;
+	cursor: pointer;
+	padding: 10px 15px;
+}
+
 .bookList {
 	width: 90vw;
 	max-width: 1170px;
 	margin: 5rem auto;
 	display: grid;
-	gap: 2rem;
 }
 
 .book {
@@ -35,10 +83,11 @@ img {
 	-moz-box-shadow: 10px 10px 19px 0px rgba(0, 0, 0, 0.36);
 	padding: 2rem 1rem;
 	color: rgb(0, 0, 0);
+	transform: scale(0.9);
 }
 
 .book:hover {
-	transform: scale(1.03);
+	transform: scale(0.93);
 	transition: ease-in-out 0.2s;
 	cursor: pointer;
 }
