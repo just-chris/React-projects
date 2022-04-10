@@ -64,10 +64,37 @@ img {
 	padding: 10px 15px;
 }
 
+.pageItems {
+	display: grid;
+	grid-template-areas: "categories booklist";
+	grid-template-columns: 0.5fr auto;
+	margin: 5rem auto;
+}
+
+ul {
+	list-style: none;
+}
+ul a {
+	text-decoration: none;
+	color: rgba(0, 0, 0, 0.77);
+	font-weight: ;
+}
+
+ul a:hover {
+	text-decoration: underline;
+}
+.categoriesUL {
+	display: grid;
+	padding: 3rem 4rem 3rem 7rem;
+	grid-template-columns: 1fr;
+	gap: 2rem;
+	text-align: right;
+}
+
 .bookList {
+	grid-area: booklist;
 	width: 90vw;
 	max-width: 1170px;
-	margin: 5rem auto;
 	display: grid;
 }
 

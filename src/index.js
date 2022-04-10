@@ -54,17 +54,53 @@ function Booklist() {
 				<Browse />
 				<UserInteract />
 			</header>
-			<section className="bookList">
-				<Book />
-				<Book />
-				<Book />
-				<Book />
-				<Book />
-				<Book />
-				<Book />
-				<Book />
-				<Book />
-			</section>
+			<div className="pageItems">
+				<section className="categories">
+					<ul className="categoriesUL">
+						<li>
+							<a href="">Items</a>
+						</li>
+						<li>
+							<a href="">Items</a>
+						</li>
+						<li>
+							<a href="">Items</a>
+						</li>
+						<li>
+							<a href="">Items</a>
+						</li>
+						<li>
+							<a href="">Items</a>
+						</li>
+						<li>
+							<a href="">Items</a>
+						</li>
+						<li>
+							<a href="">Items</a>
+						</li>
+						<li>
+							<a href="">Items</a>
+						</li>
+						<li>
+							<a href="">Items</a>
+						</li>
+						<li>
+							<a href="">Items</a>
+						</li>
+					</ul>
+				</section>
+				<section className="bookList">
+					<Book />
+					<Book />
+					<Book />
+					<Book />
+					<Book />
+					<Book />
+					<Book />
+					<Book />
+					<Book />
+				</section>
+			</div>
 		</React.Fragment>
 	);
 }
